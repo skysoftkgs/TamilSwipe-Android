@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="3dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintDimensionRatio="1:1.3"
+        tools:ignore="MissingConstraints">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/image"
+            app:riv_corner_radius="10dip"
+            app:riv_border_width="1dp"
+            app:riv_border_color="@color/gainsboro"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/round_bg" />
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/photo_delete"
+            android:background="@color/transparent"
+            android:scaleType="centerInside"
+            android:id="@+id/delete_btn"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/photo_add"
+            android:background="@color/transparent"
+            android:scaleType="centerInside"
+            android:id="@+id/add_btn"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,66 @@
+﻿<resources>
+    <string name="app_name">Tamil Swipe</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phonetext">Enter a phone number that can be used to verify your identity with a text message or phone call. </string>
+
+    <string name="facebook_app_id">1335411853277190</string>
+    <string name="fb_login_protocol_scheme">fb1335411853277190</string>
+
+    <string name="my_Interstitial_Add">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="subscription_txt">By tapping “Continue”, your payment will be charged to your Google Play
+        account, and your subscription will automatically renew for the same
+        package length at the same price until you cancel it in settings in the
+        Google Play store at least 24 hours prior to the end of the current period.
+        By tapping “Continue”, you agree to our Privacy Policy and Terms.</string>
+
+    <string name="giphy_api">IBKWDTjSxC7vOF9Vt568DVKR6QyCC3SJ</string>
+
+
+    <!--if you install the app form android studio-->
+    <string name="google_debug_key">AIzaSyCJs-uVQH7p8Z1wKHLvDD5C_k9FevjKtFY</string>
+
+
+    <!--if you install the app form Play store-->
+    <string name="google_release_key">AIzaSyCJs-uVQH7p8Z1wKHLvDD5C_k9FevjKtFY</string>
+
+
+    <!--debug key if install from android studio or release key if install from playstore-->
+    <string name="Places_api">AIzaSyCJs-uVQH7p8Z1wKHLvDD5C_k9FevjKtFY</string>
+
+
+    <string name="version">13.9</string>
+
+    <string name="device">android</string>
+    <string name="todo">TODO</string>
+    <string name="dialog_done_text">DONE</string>
+
+    <string name="dialog_cancel_text">CANCEL</string>
+
+    <string name="list_empty">No items to display</string>
+
+    <string name="select_entry">Select Entries</string>
+
+    <string name="validation_text">Please select atleast one option</string>
+
+    <string name="please_select_atleast">Please select atleast </string>
+
+    <string name="you_can_only_select_upto">You can only select upto </string>
+
+    <string name="option"> option</string>
+
+    <string name="options"> options</string>
+
+    <string name="select_all">select all</string>
+
+    <string name="de_select_all">deselect all</string>
+    <string name="terms_and_privacy">
+        By Tapping log in, you agree with TamilSwipe\n<a href="https://www.google.pl/"><font color="white">Terms of Service</font></a> and <a href="https://www.google.pl/"><font color="white">Private Policy.</font></a></string>
+    <string name="my_mobile_number">"My mobile \nnumber is."</string>
+    <string name="_000">+000</string>
+    <string name="_7xxxxxxxxxxx">7xxxxxxxxxxx</string>
+    <string name="message_phone">"Tamilswipe will send a text with a verification code.\n Message and data rates may apply.\n The verified phone number can be used to log in."</string>
+    <string name="learn_more">To continue using TamilSwipe after your free trial, you will be requested to enter debit/credit card details and will be charged USD$4.99 a month. <a href = "https://google.com"><font color="red">Learn More.</font></a></string>
+</resources>

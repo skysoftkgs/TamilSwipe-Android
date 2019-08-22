@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zoomtic.tamilswipe.Profile.Profile_F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="80dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/image_placeholder" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/akrobat_bold" />
+
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="age"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/akrobat_bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="@dimen/button_height"
+                android:text="Edit Profile"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:fontFamily="@font/akrobat_bold"
+                android:textSize="@dimen/font_button_normal"
+                android:background="@drawable/btn_edit_profile_selector"
+                android:id="@+id/edit_profile_layout"
+                />
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/btn_edit_profile_selector"
+                android:text="Settings"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/akrobat_bold"
+                android:textSize="@dimen/font_button_normal"
+                android:layout_marginTop="30dp"
+                android:id="@+id/setting_layout"
+                />
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/btn_edit_profile_selector"
+                android:text="Log Out"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:fontFamily="@font/akrobat_bold"
+                android:textSize="@dimen/font_button_normal"
+                android:id="@+id/logout_btn"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

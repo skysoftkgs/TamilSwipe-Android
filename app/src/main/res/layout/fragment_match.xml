@@ -1,0 +1,131 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zoomtic.tamilswipe.Matchs.Match_F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Congratulations!\nYou have a match!"
+                    android:fontFamily="@font/akrobat_bold"
+                    android:textColor="@color/black"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/match_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/akrobat_bold"
+                    android:text="you and alison likes each other"
+                    android:textColor="@color/dimgray"
+                    android:textSize="20dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user1_pic"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/image_placeholder"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user2_pic"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="120dp"
+                        android:src="@drawable/image_placeholder"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:id="@+id/send_message_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_send_message_selector"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/akrobat_bold"
+                    android:textSize="@dimen/font_button_normal"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_marginRight ="20dp"
+                    android:background="@color/transparent"
+                    android:text="Send A Message"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_message_white"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cross_btn"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:fontFamily="@font/akrobat_bold"
+                android:textSize="@dimen/font_button_normal"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_edit_profile_selector" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

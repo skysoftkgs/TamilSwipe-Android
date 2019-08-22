@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitXY"
+        android:src="@drawable/subscription_bg_b"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_tamilswipe"/>
+
+    <TextView
+        android:id="@+id/textView_learnMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/learn_more"
+        android:textColor="@color/dark_gray"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/akrobat_semi_bold"
+        android:layout_marginBottom="70dp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YOUR TRIAL FREE"
+            android:textColor="@color/black"
+            android:fontFamily="@font/akrobat_black"
+            android:textSize="40sp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_trial_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:text="ENDEND"
+                android:textColor="@color/white"
+                android:fontFamily="@font/akrobat_black"
+                android:textSize="40sp"
+                android:background="@drawable/bg_rounded_pink"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:text="Just $4.99"
+                android:textColor="@color/black"
+                android:fontFamily="@font/akrobat_bold"
+                android:textSize="40sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:text="a month"
+                android:textColor="@color/black"
+                android:fontFamily="@font/akrobat_bold"
+                android:textSize="22sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_edit_profile_selector"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_button_normal"
+            android:textColor="@color/white"
+            android:id="@+id/trail_continue_btn"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

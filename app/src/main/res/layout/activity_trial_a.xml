@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitXY"
+        android:src="@drawable/trail_screen"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRY TAMILSWIPE"
+            android:textColor="@color/black"
+            android:fontFamily="@font/akrobat_black"
+            android:layout_marginTop="90dp"
+            android:textSize="40sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:text="FREE"
+            android:textColor="@color/pink_color"
+            android:fontFamily="@font/akrobat_black"
+            android:textSize="60sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="START YOUR 14 DAY"
+            android:textColor="@color/black"
+            android:fontFamily="@font/akrobat_black"
+            android:layout_marginTop="5dp"
+            android:textSize="28sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRIAL NOW"
+            android:textColor="@color/black"
+            android:fontFamily="@font/akrobat_black"
+            android:layout_marginTop="-15dp"
+            android:textSize="50sp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_edit_profile_selector"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_button_normal"
+            android:textColor="@color/white"
+            android:id="@+id/trail_continue_btn"/>
+
+
+        <TextView
+            android:id="@+id/textView_learnMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/learn_more"
+            android:textColor="@color/dark_gray"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/akrobat_semi_bold"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

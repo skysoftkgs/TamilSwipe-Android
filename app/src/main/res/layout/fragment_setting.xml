@@ -1,0 +1,646 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zoomtic.tamilswipe.Settings.Setting_F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FBFBFB">
+
+        <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:layout_weight="1"-->
+        <!--app:contentInsetLeft="0dp"-->
+        <!--android:elevation="5dp"-->
+        <!--app:contentInsetStart="0dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@color/light_white">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/back_btn"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_heading"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/done_btn"
+                android:text="Done"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textColor="@color/pink_color"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <!--</android.support.v7.widget.Toolbar>-->
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:fillViewport="true"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_show_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/round_bg">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Show me On TamilSwipe"
+                            android:layout_centerVertical="true"
+                            android:textSize="20dp"
+                            android:textColor="@color/setting_item_text"/>
+
+                        <ImageButton
+                            android:id="@+id/imageButton_show_me"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/transparent"/>
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:theme="@style/SCBSwitch"
+                            android:visibility="gone"
+                            android:id="@+id/show_me_on_binder"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/transparent"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I am interested meeting matches from: "
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/distance_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="mile"
+                            android:visibility="gone"
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_countries"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="25dp"
+                        android:gravity="center"
+                        android:background="@drawable/round_bg">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Countries"
+                                android:layout_centerVertical="true"
+                                android:textSize="20dp"
+                                android:textColor="@color/setting_item_text"/>
+
+                            <ImageView
+                                android:id="@+id/country_more"
+                                android:layout_width="20dp"
+                                android:layout_height="10dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/country_detail"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_country_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:background="@color/transparent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="All Countries"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                            <ImageButton
+                                android:id="@+id/imageButton_all_countries"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:scaleType="centerInside"
+                                android:background="@color/transparent"/>
+
+                        </RelativeLayout>
+
+                        <ListView
+                            android:id="@+id/listview_countries"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+
+                        </ListView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:background="@color/transparent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I am interested in..."
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
+
+                    <RelativeLayout
+                        android:id="@+id/gender_men_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:background="@drawable/round_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Men"
+                            android:textSize="20dp"
+                            android:textColor="@color/setting_item_text"/>
+
+                        <ImageView
+                            android:id="@+id/gender_men"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/item_selected"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/gender_women_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:background="@drawable/round_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Women"
+                            android:textSize="20dp"
+                            android:textColor="@color/setting_item_text"/>
+
+                        <ImageView
+                            android:id="@+id/gender_women"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/item_selected"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/gender_everyone_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:background="@drawable/round_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Everyone"
+                            android:textSize="20dp"
+                            android:textColor="@color/setting_item_text"/>
+
+                        <ImageView
+                            android:id="@+id/gender_everyone"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/item_selected"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <com.github.florent37.shapeofview.shapes.RoundRectView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    android:visibility="gone"
+                    app:shape_roundRect_bottomLeftRadius="3dp"
+                    app:shape_roundRect_bottomRightRadius="3dp"
+                    app:shape_roundRect_topLeftRadius="3dp"
+                    app:shape_roundRect_topRightRadius="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/one_layout">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Swiping in"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:textColor="@color/pink_color"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="My Current Location"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/dark_gray"/>
+
+                        </RelativeLayout>
+
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            app:ael_expanded="true"
+                            app:ael_duration="500"
+                            app:ael_interpolator="bounce"
+                            app:ael_orientation="vertical"
+                            android:layout_below="@+id/one_layout"
+                            android:id="@+id/expandable_layout">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:id="@+id/two_layout">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_centerVertical="true">
+
+                                    <ImageView
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:tint="@color/pink_color"
+                                        android:src="@drawable/ic_location_marker"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="My Current Location"
+                                        android:layout_centerVertical="true"
+                                        android:textColor="@color/black"
+                                        android:layout_marginLeft="5dp"/>
+
+                                </LinearLayout>
+
+
+                                <android.support.v7.widget.SwitchCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:theme="@style/SCBSwitch"
+                                    android:id="@+id/current_loction_switch"/>
+
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_below="@+id/two_layout">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add New Location"
+                                    android:padding="5dp"
+                                    android:gravity="left"
+                                    android:layout_marginRight="50dp"
+                                    android:id="@+id/new_location_txt"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/pink_color"/>
+
+                                <android.support.v7.widget.SwitchCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:theme="@style/SCBSwitch"
+                                    android:id="@+id/selected_location_switch"/>
+
+
+                            </RelativeLayout>
+
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                    </RelativeLayout>
+                </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+                <com.github.florent37.shapeofview.shapes.RoundRectView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:elevation="1dp"
+                    android:layout_marginTop="15dp"
+                    app:shape_roundRect_bottomLeftRadius="3dp"
+                    app:shape_roundRect_bottomRightRadius="3dp"
+                    app:shape_roundRect_topLeftRadius="3dp"
+                    app:shape_roundRect_topRightRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Show me"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="@color/pink_color"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Men"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"/>
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:theme="@style/SCBSwitch"
+                                android:id="@+id/men_switch"/>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Women"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"/>
+                            <android.support.v7.widget.SwitchCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:theme="@style/SCBSwitch"
+                                android:id="@+id/women_switch"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/age_range_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Age between"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
+
+                    <com.github.guilhe.views.SeekBarRangedView
+                        android:id="@+id/range_age_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        custom:min="18"
+                        custom:max="75"
+                        custom:backgroundColor="#bcbcbc"
+                        custom:progressColor="#ff85b0"
+                        custom:backgroundHeight="10dp"
+                        custom:progressHeight="10dp"
+                        custom:thumbsResource="@drawable/circle_pink"
+                        custom:rounded="true"/>
+                </LinearLayout>
+
+
+
+                <com.github.florent37.shapeofview.shapes.RoundRectView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:elevation="1dp"
+                    android:visibility="gone"
+                    app:shape_roundRect_bottomLeftRadius="3dp"
+                    app:shape_roundRect_bottomRightRadius="3dp"
+                    app:shape_roundRect_topLeftRadius="3dp"
+                    app:shape_roundRect_topRightRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:id="@+id/logout_btn">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Logout"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/btn_edit_profile_selector"
+                    android:gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/delete_account_btn">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Delete Account"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Legal Policy"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/privacy_policy_txt"
+                    android:textColor="#2d95af"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</FrameLayout>

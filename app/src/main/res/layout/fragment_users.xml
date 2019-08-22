@@ -1,0 +1,169 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zoomtic.tamilswipe.Users.Users_F">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/user_list_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:transitionName="transtion_name_example"
+            android:id="@+id/shared_element">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="NAME age"
+                            android:textSize="32dp"
+                            android:id="@+id/name_age_txt"
+                            android:fontFamily="@font/akrobat_bold"
+                            android:textColor="@color/black"
+                            android:textAlignment="textStart"
+                            android:gravity="start|center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="25dp"
+                            android:text="Country"
+                            android:id="@+id/country_mile_txt"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/akrobat_semi_bold"
+                            />
+
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/detail_btn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_binder_move_below_selector"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <com.yuyakaido.android.cardstackview.CardStackView
+                        android:id="@+id/card_viewstack"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:elevationEnabled="false"
+                        android:layout_marginBottom="84dp"
+                        app:leftOverlay="@layout/overlay_left"
+                        app:rightOverlay="@layout/overlay_right"
+                        app:swipeDirection="horizontal">
+
+                    </com.yuyakaido.android.cardstackview.CardStackView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true">
+
+                        <ImageButton
+
+                            android:id="@+id/cross_btn"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@color/transparent"
+                            android:padding="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_cross_selector"
+                            android:visibility="visible" />
+
+                        <ImageButton
+                            android:id="@+id/heart_btn"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@color/transparent"
+                            android:padding="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_heart_selector"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/find_nearby_User"
+        android:visibility="gone">
+
+        <pl.bclogic.pulsator4droid.library.PulsatorLayout
+            android:id="@+id/pulsator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:pulse_count="4"
+            app:pulse_duration="10000"
+            app:pulse_repeat="20"
+            app:pulse_color="@color/pink_color"
+            app:pulse_startFromScratch="true"
+            app:pulse_interpolator="Linear">
+        </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/profileimage"
+            android:src="@drawable/image_placeholder"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
